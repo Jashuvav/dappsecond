@@ -3,7 +3,6 @@ import { Fragment, ReactNode } from "react";
 export interface LabelValueGridProps {
   items: Array<{ label: string; subLabel?: string; value: ReactNode }>;
 }
-
 export function LabelValueGrid({ items }: LabelValueGridProps) {
   return (
     <div className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-6 gap-y-2 break-words">
@@ -19,13 +18,11 @@ export function LabelValueGrid({ items }: LabelValueGridProps) {
     </div>
   );
 }
-
 export interface DisplayValueProps {
   value: string;
   isCorrect: boolean;
   expected?: string;
 }
-
 export function DisplayValue({ value, isCorrect, expected }: DisplayValueProps) {
   return (
     <div className="flex flex-col gap-2">
